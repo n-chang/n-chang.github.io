@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    background-image: url("../img/backgroundImage.svg");
+    align-items:center;
+    background-color:#DDEBEB;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+
+}
+
+#title {
+    font-size:6em;
+    text-align:center;
+    margin: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(254,255,252);
+    font-family: 'Dancing Script', cursive;
+}
+
+#intro, #intro-summary{
+    font-family: 'Lora', serif;
+    text-align: center;
+    position: relative;
+	animation-name: fadein;
+    animation-duration: 1.7s;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+
+}
+
+#intro {
+margin: 30px;
+margin-bottom: 5px;
+font-weight: bold;
+
+font-size: 40px;
+letter-spacing: 1px;
+}
+
+#intro-summary {
+    
+    margin: 10px;
+    font-size:18px;
+}
+
+#icon-container{
+    margin:0 auto;
+    z-index: 1;
+    width: 80%;
+    padding: 5%;
+    height:10%;
+    top: 50;
+    margin-top: 0%; 
+    text-align:center;
+}
+#crocheting{
+    margin-left: 20px;
+    transform: translateX(-40%) scale(0.9);
+}
+
+#origami, #sewing{
+    transform:scale(0.8);
+}
+
+ #origami:hover, #sewing:hover {
+    transform: rotate(5deg) ;
+}
+#crocheting:hover {
+    transform:scale(1.1) translateX(-40%) rotate(5deg);
+}
+
+
+#clouds-container {
+    position: relative;
+    width: 60%;
+    height: 10px;
+    margin: 0 auto;
+    align-items:center;
+    
+    justify-content: space-evenly;
+
+
+}
+
+#cloud1{
+    width: 200px;
+    height: 250px;
+    transform: translateY(-90%);
+    opacity:0.4;
+}
+#cloud2{
+    width: 200px;
+    height: 250px;
+    transform: translateY(-30%);
+    opacity:0.35;
+}
+
+
+#cloud3{
+    width: 200px;
+    height: 250px;
+    transform: translateY(-150%);
+    opacity:0.6;
+}
+
+@keyframes float{
+    0% { left: 0%;}
+    50%{ left : 60%;}
+    100%{ left: 0%;}
+}
+
+@keyframes float2{
+    0% { left: 0%;}
+    50%{ left : 50%;}
+    100%{ left: 0%;}
+}
+
+@keyframes float3{
+    0% { left: 0%;}
+    50%{ left : 30%;}
+    100%{ left: 0%;}
+}
+
+@keyframes fadein{
+    0% { opacity: 0;}
+    100% {opacity: 1.0;}
+
+
+}
+
+#cloud2{
+	position: relative;
+
+	animation-name: float;
+    animation-duration: 50s;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#cloud1{
+	position: relative;
+
+	animation-name: float;
+    animation-duration: 40s;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#cloud3{
+	position: relative;
+	animation-name: float3;
+    animation-duration: 30s;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+body {
+    margin: 30px;
+    background: #A5D0D0;
+    align-items:center;
+    background-color:#DDEBEB;
+    display: flex;
+   flex-direction: column;
+    position: relative;
+    align-items:center;
+    justify-content: space-around;
+  
+}
+#icon2{
+  border:hotpink 2px;
+}
+
+
+.summary{
+  font-family: 'Lora', serif;
+  text-align: left;
+  letter-spacing: 0px;
+  font-size: 150%;
+  margin-top:20px;
+  margin-bottom:20px;
+  color: rgb(41, 41, 41);
+  
+}
+
+#crocheting{
+  background-color:#B3C5C5;
+  padding: 40px;
+}
+#sewing{
+  background-color:#95b6b6;
+  padding: 40px;
+}
+#origami{
+  background-color:#799999;
+  padding: 40px;
+}
+
+.home-button{
+    font-size:40px;
+    position:relative;
+    top: 20px;
+    right: 20px;
+    text-align:right;
+    margin: 0px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script', cursive;
+
+}
+#home-button:hover { 
+
+  cursor:pointer;
+   
+ }
+
+ .summary{
+    font-family: 'Lora', serif;
+    text-align: left;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+   
+
+}
+.carousel{
+    width: 1200px;
+    height: 400px;
+  }
+
+.images, .images2, .images3{
+  width: 360px;
+  height: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+  
+
+/* Carousel frame setup */
+
+.carousel {
+  position:relative;
+  /* Part 2.1: Hide stuff that overflows the box */
+  overflow: hidden;
+}
+
+
+.carousel-image-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0px;
+    transition: 0.5s left;
+
+  }
+
+.c1 img {
+    height: 100%;
+    width:auto;
+} 
+
+  /* Controls */
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  /* Part 3: optional button styling */
+  
+  .carousel-controls {
+    /* vertically center */       
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    /* spacing between the two buttons */
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* appear in front of images */
+    z-index: 1; 
+  }
+ 
+   #button-next,
+  #button-previous,
+  #button-next2,
+ #button-previous2, #button-next3,
+ #button-previous3   {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  } 
+   
+
+  
+@keyframes fadein{
+  0% { opacity: 0.3;}
+  100% {opacity: 1.0;}
+
+}
+
+
+.titleIcon{
+  animation-name: fadein, moveright;
+    animation-duration: 1.0s;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+ 
